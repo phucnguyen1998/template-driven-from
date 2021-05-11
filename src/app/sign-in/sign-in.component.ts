@@ -14,6 +14,8 @@ export class SignInComponent implements OnInit {
     rememberMe: true
   };
 
+  userNamePattern = /^[a-z]{6,32}$/i;
+
   constructor() { }
 
   ngOnInit(): void {
